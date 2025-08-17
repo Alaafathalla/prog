@@ -1,4 +1,5 @@
 import React from "react";
+import { FaUsersCog, FaTachometerAlt, FaCheckSquare } from "react-icons/fa";
 
 const AboutSection = () => {
   return (
@@ -32,13 +33,13 @@ const AboutSection = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-4">
               <div className="flex items-center">
                 <div className="flex-shrink-0 w-14 h-14 bg-yellow-100 flex items-center justify-center mr-3 rounded">
-                  <i className="fa fa-users-cog fa-2x text-yellow-600"></i>
+                  <FaUsersCog size={32} className="text-yellow-600" />
                 </div>
                 <h5 className="uppercase font-semibold mb-0">Certified Expert & Team</h5>
               </div>
               <div className="flex items-center">
                 <div className="flex-shrink-0 w-14 h-14 bg-yellow-100 flex items-center justify-center mr-3 rounded">
-                  <i className="fa fa-tachometer-alt fa-2x text-yellow-600"></i>
+                  <FaTachometerAlt size={32} className="text-yellow-600" />
                 </div>
                 <h5 className="uppercase font-semibold mb-0">Fast & Reliable Services</h5>
               </div>
@@ -47,15 +48,15 @@ const AboutSection = () => {
             {/* List */}
             <ul className="mb-6 space-y-2 text-gray-600">
               <li className="flex items-center">
-                <i className="fa fa-check-square text-yellow-600 mr-3"></i>
+                <FaCheckSquare className="text-yellow-600 mr-3" size={20} />
                 Many variations of passages of lorem ipsum
               </li>
               <li className="flex items-center">
-                <i className="fa fa-check-square text-yellow-600 mr-3"></i>
+                <FaCheckSquare className="text-yellow-600 mr-3" size={20} />
                 Many variations of passages of lorem ipsum
               </li>
               <li className="flex items-center">
-                <i className="fa fa-check-square text-yellow-600 mr-3"></i>
+                <FaCheckSquare className="text-yellow-600 mr-3" size={20} />
                 Many variations of passages of lorem ipsum
               </li>
             </ul>
