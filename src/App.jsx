@@ -1,13 +1,5 @@
 import React from 'react'
 
-type Feature = {
-  id: string
-  title: string
-  description: string
-  icon: React.ReactNode
-  linkLabel: string
-}
-
 const IconHammer = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
     <path d="M20.3 7.7l-4-4a1 1 0 00-1.41 0l-2.42 2.42a1 1 0 000 1.41l.29.3-9.18 9.17a2.5 2.5 0 103.54 3.53l9.18-9.17.3.29a1 1 0 001.41 0L20.3 9.1a1 1 0 000-1.41z"/>
@@ -32,7 +24,7 @@ const IconTools = () => (
   </svg>
 )
 
-const features: Feature[] = [
+const features = [
   {
     id: 'quality-welding',
     title: 'QUALITY WELDING',
@@ -67,7 +59,7 @@ const features: Feature[] = [
   },
 ]
 
-function FeatureCard({ feature }: { feature: Feature }) {
+function FeatureCard({ feature }) {
   return (
     <div className="group relative rounded-md bg-white shadow-card">
       <div className="absolute -top-7 left-10 rounded-sm bg-brand-gold p-4 text-white">
