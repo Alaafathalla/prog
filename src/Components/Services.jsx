@@ -60,17 +60,17 @@ const Services = () => {
           {servicesData.map((service) => (
             <article
               key={service.id}
-              className="bg-white shadow-sm hover:shadow-lg transition-shadow duration-200 border border-gray-100"
+              className="group bg-white hover:bg-[#ce9233] transition-colors duration-300 shadow-sm hover:shadow-lg border border-gray-100"
             >
-              <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-
               <div className="p-5">
+                <div className="w-[88%] ml-auto -mt-4 aspect-[4/3] overflow-hidden">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
                 <h3 className="text-lg font-semibold uppercase mb-2 text-gray-900">
                   {service.title}
                 </h3>
