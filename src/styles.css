@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* base tweaks to better match the design */
+@layer base {
+  body {
+    @apply bg-white text-slate-700 antialiased;
+  }
+}
+
